@@ -1,1 +1,5 @@
-old/
+# place for notes that should not be added to the repo
+_local_notes/
+
+# PyCharm related files
+.idea
