@@ -1,5 +1,8 @@
 # place for notes that should not be added to the repo
 _local_notes/
 
-# PyCharm related files
+# Python, PyCharm and related files (IDE and Python Viratual Environment)
+*.pyc
+*.pyo
 .idea
+.venv
