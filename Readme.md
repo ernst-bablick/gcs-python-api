@@ -1,5 +1,7 @@
 # Gridware Cluster Scheduler - Python API
 
+(WORK IN PROGRESS)
+
 This is a Python API for Gridware Cluster Scheduler (GCS) (former Sun Grid Engine / Uniiva Grid Engine) that allows you to interact with GCS via the Python programming language. In difference to other APIs that usually wrap command line tools, this API directly accesses the primary C/C++ interface of GCS.
 
 This allows for a more efficient and direct interaction from outside GCS (as a client) but also from within GCS (as a plugin or embedded module).
