@@ -1,5 +1,4 @@
 import time
-from wsgiref.util import guess_scheme
 
 import config
 import unittest
@@ -23,7 +22,6 @@ class OcsMirrorClientDataStoreTest(unittest.TestCase):
         # Stop the OcsMirrorClientDataStore thread
         mirror_thread.stop()
         mirror_thread.join()
-
 
 if __name__ == '__main__':
     unittest.main()

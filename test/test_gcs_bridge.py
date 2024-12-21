@@ -1,20 +1,20 @@
 import unittest
-import gcs_bridge as gcs
+import ocs_bridge as ocs
 
 class MyTestCase(unittest.TestCase):
     def test_basic(self):
         expected_value = 1234
 
-        job_descr = gcs.get_JB_Type()
-        job_id_nm = gcs.get_field()
+        job_descr = ocs.get_JB_Type()
+        job_id_nm = ocs.get_field()
 
-        elem=gcs.lCreateElem(job_descr)
+        elem=ocs.lCreateElem(job_descr)
 
-        gcs.lSetUlong(elem, job_id_nm, expected_value)
-        value = gcs.lGetUlong(elem, job_id_nm)
+        ocs.lSetUlong(elem, job_id_nm, expected_value)
+        value = ocs.lGetUlong(elem, job_id_nm)
 
-        stdout = gcs.get_stdout()
-        gcs.lWriteElemTo(elem, stdout)
+        stdout = ocs.get_stdout()
+        ocs.lWriteElemTo(elem, stdout)
 
         self.assertEqual(expected_value, value)
 
