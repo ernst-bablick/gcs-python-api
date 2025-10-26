@@ -1,7 +1,7 @@
 import config
 import unittest
 
-import ocs_bridge as ocs
+import ocs.ocs_bridge as ocs
 
 class OcsVersionTest(unittest.TestCase):
     def setUp(self):

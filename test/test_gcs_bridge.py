@@ -1,5 +1,5 @@
 import unittest
-import ocs_bridge as ocs
+import ocs.ocs_bridge as ocs
 
 class MyTestCase(unittest.TestCase):
     def test_basic(self):
