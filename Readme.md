@@ -20,7 +20,7 @@ In future the API will be extended to cover following areas:
 
 This API depends on packages mentioned in the `requirements.txt` file. You can install them via pip.
 
-Additionally you need to install the pybind development package for your system in order to build the C++ bindings. For example, on Ubuntu/Debian you can install it via:
+Additionally, you need to install the pybind development package for your system in order to build the C++ bindings. For example, on Ubuntu/Debian you can install it via:
 
 ```bash
 sudo apt-get install pybind11-dev
@@ -31,5 +31,5 @@ The ocs directory has to contain a file named ocs_bridge.so that provides the C+
 Before you run the tests, make sure that your environment is set up correctly:
 
 * LD_PRELOAD=./ocs/ocs_bridge.so - is required to load the C++ extension module
-* SGE_ROOT=<Path to GCS installation> - is required to find GCS distribution files
-* SGE_QMASTER_PORT=<Port of GCS qmaster> - is required to connect to the GCS qmaster
+* SGE_ROOT=\<Path to GCS installation\> - is required to find GCS distribution files
+* SGE_QMASTER_PORT=\<Port of GCS qmaster\> - is required to connect to the GCS qmaster
